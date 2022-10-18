@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #d4a373 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+    transform: translateX(-20rem);
+    transition: transform 1s ease;
+
+    .container{
+        color: #fff;
+        .logo{
+            font-size: 2rem;
+        }
+        .menu{
+            color: #fff;
+            margin-top: 3rem;
+            .menu-list{
+                list-style-type: none;
+                .list-item{
+                    padding: .8rem 1rem;
+                    border-radius: 1rem;
+                    transition: all .2s ease-in-out;
+                    a{
+                        text-decoration: none;
+                        font-size: 1rem;
+                        color: #fff;
+                    }
+
+                    &:hover{
+                        background-color: #fff;
+                    }
+                    &:hover a{
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+    .social-icons{
+        display: flex;
+        gap: 2rem;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+
+            &:hover{
+                color: rgba(0,0,0,0.2);
+            }
+        }
+    }
+}
+.sidebar-active{
+    transform: translateX(0);
+}

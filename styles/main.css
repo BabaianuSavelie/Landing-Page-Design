@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.wrapper .close-btn {
+  position: fixed;
+  z-index: 1;
+  top: 0.8rem;
+  left: 0.8rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 4rem;
+}
+.main-content .header {
+  font-family: "Open Sans", sans-serif;
+}
+.main-content .header .title {
+  font-size: 4rem;
+}
+.main-content .header .subtitle {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: #d5bdaf;
+}
+.main-content .header .bottom_bar {
+  width: 5rem;
+  height: 0.6rem;
+  background-color: #d5bdaf;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.main-content .photo_gallery {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.main-content .photo_gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar {
+  width: 20rem;
+  height: 100vh;
+  background-color: #d4a373;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+  transform: translateX(-20rem);
+  transition: transform 1s ease;
+}
+.sidebar .container {
+  color: #fff;
+}
+.sidebar .container .logo {
+  font-size: 2rem;
+}
+.sidebar .container .menu {
+  color: #fff;
+  margin-top: 3rem;
+}
+.sidebar .container .menu .menu-list {
+  list-style-type: none;
+}
+.sidebar .container .menu .menu-list .list-item {
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar .container .menu .menu-list .list-item a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+}
+.sidebar .container .menu .menu-list .list-item:hover {
+  background-color: #fff;
+}
+.sidebar .container .menu .menu-list .list-item:hover a {
+  color: gray;
+}
+.sidebar .social-icons {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sidebar .social-icons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.sidebar .social-icons a:hover {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-active {
+  transform: translateX(0);
+}/*# sourceMappingURL=main.css.map */

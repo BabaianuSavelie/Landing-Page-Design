@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .close-btn{
+        position: fixed;
+        z-index: 1;
+        top: .8rem;
+        left: .8rem;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+    }
+}
